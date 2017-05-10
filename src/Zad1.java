@@ -8,7 +8,6 @@ public class Zad1 {
 		int target,i,choice;		
 		String outOrNot = new String();
 		Scanner scan = new Scanner(System.in);
-		//Scanner scan1 = new Scanner(System.in);
 		do{
 			System.out.println("Masz za zadanie odgarnąć liczbę losowo wygenerowaną przez program.\n
 				   Na Twoje szczęście uzyskasz małe podpowiedzi.");
