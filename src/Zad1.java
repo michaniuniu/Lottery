@@ -13,7 +13,7 @@ public class Zad1 {
 			System.out.println("Masz za zadanie odgarnąć liczbę losowo wygenerowaną przez program.\n
 				   Na Twoje szczęście uzyskasz małe podpowiedzi.");
 			target = random.nextInt(100);
-			System.out.println(target);	
+			//System.out.println(target);	
 			choice = scan.nextInt();
 			i = 0;
 			do{
