@@ -9,28 +9,30 @@ public class Zad1 {
 		String outOrNot = new String();
 		Scanner scan = new Scanner(System.in);
 		//Scanner scan1 = new Scanner(System.in);
-	do{
-		System.out.println("Masz za zadanie odgarn¹æ liczbê losow¹ wygenerowan¹ przez program.\nNa Twoje szczêœcie uzyskasz ma³e podpowiedzi.");
-		target = random.nextInt(100);System.out.println(target);	
-		choice = scan.nextInt();
-		i = 0;
 		do{
-			if (choice<target)
-				System.out.println("Musisz celowaæ wy¿ej");
-			if (choice>target)
-				System.out.println("Musisz celowaæ ni¿ej");
-			if (choice!=target)
-				choice = scan.nextInt();
-			i++;
-		}while(choice!=target);
-		
-		System.out.println("Brawo strza³ w dziesi¹tkê!");
-		System.out.println("Dokona³eœ "+i+" prób.");
-		System.out.println("Czy chesz zagrac jeszcze raz?");
-		scan.nextLine();
-		outOrNot = scan.nextLine();
+			System.out.println("Masz za zadanie odgarnÄ…Ä‡ liczbÄ™ losowo wygenerowanÄ… przez program.\n
+				   Na Twoje szczÄ™Å›cie uzyskasz maÅ‚e podpowiedzi.");
+			target = random.nextInt(100);
+			System.out.println(target);	
+			choice = scan.nextInt();
+			i = 0;
+			do{
+				if (choice<target)
+					System.out.println("Musisz celowaÃ¦ wyÂ¿ej");
+				if (choice>target)
+					System.out.println("Musisz celowaÃ¦ niÂ¿ej");
+				if (choice!=target)
+					choice = scan.nextInt();
+				i++;
+			}while(choice!=target);
+			
+			System.out.println("Brawo strzaÂ³ w dziesiÂ¹tkÃª!");
+			System.out.println("DokonaÂ³eÅ“ "+i+" prÃ³b.");
+			System.out.println("Czy chesz zagrac jeszcze raz?");
+			scan.nextLine();
+			outOrNot = scan.nextLine();
 	
-	}while(outOrNot.equalsIgnoreCase("tak") || outOrNot.equalsIgnoreCase("t"));
-	scan.close();
+		}while(outOrNot.equalsIgnoreCase("tak") || outOrNot.equalsIgnoreCase("t"));
+		scan.close();
 	}
 }
