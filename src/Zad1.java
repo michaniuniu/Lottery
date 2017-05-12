@@ -32,6 +32,7 @@ public class Zad1 {
 			outOrNot = scan.nextLine();
 	
 		}while(outOrNot.equalsIgnoreCase("tak") || outOrNot.equalsIgnoreCase("t"));
+		System.out.println("Do widzenia.");
 		scan.close();
 	}
 }
